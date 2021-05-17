@@ -1,0 +1,114 @@
+.app {
+  /* text-align: center; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #344657;
+
+  min-height: 100vh;
+  min-width: 100vw;
+  display: inline-block;
+  background-size: cover;
+  transition: 0.5s ease;
+}
+
+@media (prefers-reduced-motion: no-preference) {}
+
+.search-area {
+  width: 75%;
+  max-width: 500px;
+  margin: 1rem auto;
+
+  /* border: 2px solid magenta; */
+
+}
+
+.search-area .search-box {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  box-sizing: border-box;
+  /* margin: 1 auto; */
+
+  border-radius: 1rem;
+  outline: 0;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.cards {
+  width: 90%;
+  max-width: 1000px;
+  min-width: 100px;
+  margin: 1rem auto;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards .card {
+  min-width: 250px;
+
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0.25em 0.25em #313a704b;
+  
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+.weather-details {
+  width: 100%;
+
+  padding: 0.5rem;
+
+}
+
+.current-temp {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+tr:nth-child(odd) {
+  background-color: #eeeeee;
+}
+
+.value {
+  text-align: right;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  /* align-items: center;
+  flex-wrap: wrap; */
+}
+
+.column {
+  margin: 0.5rem;
+}
+
+.app.night {
+  background-image: linear-gradient(-160deg, #0c1228, #262b42);
+}
+
+.app.day {
+  background-image: linear-gradient(160deg, #0d7faf, #6bc9f5);
+  /*  background-image: radial-gradient(at 75% 100%,#0d7faf, #5bb3db); */
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
